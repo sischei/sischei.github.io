@@ -140,7 +140,7 @@ img { max-width: 100%; display: block; }
 .hero-text h1 { font-size: 2.35rem; font-weight: 700; letter-spacing: -.03em; margin-bottom: .35rem; }
 .hero-text .subtitle { font-size: 1.05rem; opacity: .94; margin-bottom: .55rem; }
 .hero-text .subtitle-muted { font-size: .95rem; opacity: .82; }
-.hero-text .subtitle a { color: var(--accent); }
+.hero-text .subtitle a { color: #f0d890; text-decoration: underline; text-decoration-color: rgba(240,216,144,.4); text-underline-offset: 2px; }
 .hero-lede {
   margin: 1rem 0 1.3rem;
   max-width: 58ch;
