@@ -3,18 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teaching - Simon Scheidegger</title>
+  <title>Teaching | Simon Scheidegger</title>
+  <meta name="description" content="Teaching, summer schools, executive education, and course materials by Simon Scheidegger.">
+  <link rel="canonical" href="https://sischei.github.io/teaching.html">
+  <meta property="og:site_name" content="Simon Scheidegger">
+  <meta property="og:title" content="Teaching | Simon Scheidegger">
+  <meta property="og:description" content="Teaching, summer schools, executive education, and course materials.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sischei.github.io/teaching.html">
+  <meta property="og:image" content="https://sischei.github.io/assets/portrait-share.jpg">
+  <meta property="og:image:alt" content="Portrait of Simon Scheidegger">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Teaching | Simon Scheidegger">
+  <meta name="twitter:description" content="Teaching, summer schools, executive education, and course materials.">
+  <meta name="twitter:image" content="https://sischei.github.io/assets/portrait-share.jpg">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <nav class="navbar">
   <div class="navbar-inner">
     <a href="index.html" class="nav-brand">Simon Scheidegger</a>
-    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
-    <ul class="nav-links">
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="site-navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links" id="site-navigation">
       <li><a href="index.html">Home</a></li>
       <li><a href="cv.html">CV</a></li>
       <li><a href="publications.html">Publications</a></li>
@@ -33,7 +50,7 @@
   </div>
 </header>
 
-<main class="main">
+<main class="main" id="main-content">
 
   <!-- 2025 -->
   <div class="card">
@@ -42,19 +59,19 @@
     <div class="course-item">
       <div class="course-title">Advanced Data Analytics</div>
       <div class="course-meta">HEC Lausanne &middot; September&ndash;December 2025 &middot; Machine learning (supervised, unsupervised, reinforcement learning)</div>
-      <div class="course-meta"><a href="https://ap-unil-2025.github.io/ada-course-materials/" target="_blank">Course Materials</a></div>
+      <div class="course-meta"><a href="https://ap-unil-2025.github.io/ada-course-materials/" target="_blank" rel="noopener noreferrer">Course Materials</a></div>
     </div>
 
     <div class="course-item">
       <div class="course-title">Data Science and Advanced Programming</div>
       <div class="course-meta">HEC Lausanne &middot; September&ndash;December 2025 &middot; ML basics, Python, parallel computing, HPC</div>
-      <div class="course-meta"><a href="https://ap-unil-2025.github.io/course-materials/" target="_blank">Course Materials</a></div>
+      <div class="course-meta"><a href="https://ap-unil-2025.github.io/course-materials/" target="_blank" rel="noopener noreferrer">Course Materials</a></div>
     </div>
 
     <div class="course-item">
       <div class="course-title">Deep Learning for Economics and Finance</div>
-      <div class="course-meta"><a href="https://sites.google.com/carloalberto.org/thesummerschool2025unito/course-program?authuser=0" target="_blank">ESOMAS, University of Torino Summer School</a> &middot; August 24&ndash;27, 2025</div>
-      <div class="course-meta"><a href="https://github.com/sischei/SummerSchool_DL_Turin_2025/tree/main" target="_blank">Course Materials</a></div>
+      <div class="course-meta"><a href="https://sites.google.com/carloalberto.org/thesummerschool2025unito/course-program?authuser=0" target="_blank" rel="noopener noreferrer">ESOMAS, University of Torino Summer School</a> &middot; August 24&ndash;27, 2025</div>
+      <div class="course-meta"><a href="https://github.com/sischei/SummerSchool_DL_Turin_2025/tree/main" target="_blank" rel="noopener noreferrer">Course Materials</a></div>
     </div>
   </div>
 
@@ -65,19 +82,19 @@
     <div class="course-item">
       <div class="course-title">Deep Learning for Solving Dynamic Models</div>
       <div class="course-meta">Central-German Doctoral Program Economics, University of Leipzig &middot; May 22&ndash;24, 2024</div>
-      <div class="course-meta"><a href="https://github.com/sischei/Deep_Learning_For_Dynamic_Econ/tree/main" target="_blank">Course Materials</a></div>
+      <div class="course-meta"><a href="https://github.com/sischei/Deep_Learning_For_Dynamic_Econ/tree/main" target="_blank" rel="noopener noreferrer">Course Materials</a></div>
     </div>
 
     <div class="course-item">
       <div class="course-title">Advanced Data Analytics</div>
       <div class="course-meta">HEC Lausanne &middot; February&ndash;May 2024</div>
-      <div class="course-meta"><a href="https://drive.google.com/file/d/1SW_-8ODwgsLFtqXLUnSqx0ft_mhlSmbr/view?usp=sharing" target="_blank">Syllabus</a></div>
+      <div class="course-meta"><a href="https://drive.google.com/file/d/1SW_-8ODwgsLFtqXLUnSqx0ft_mhlSmbr/view?usp=sharing" target="_blank" rel="noopener noreferrer">Syllabus</a></div>
     </div>
 
     <div class="course-item">
       <div class="course-title">Advanced Programming</div>
       <div class="course-meta">HEC Lausanne &middot; February&ndash;May 2024 &middot; Python, parallel computing, HPC</div>
-      <div class="course-meta"><a href="https://drive.google.com/file/d/1sUKi_Js0dS4MYrFf1HT8A0ALZoz3lEew/view?usp=sharing" target="_blank">Syllabus</a></div>
+      <div class="course-meta"><a href="https://drive.google.com/file/d/1sUKi_Js0dS4MYrFf1HT8A0ALZoz3lEew/view?usp=sharing" target="_blank" rel="noopener noreferrer">Syllabus</a></div>
     </div>
   </div>
 
@@ -88,13 +105,13 @@
     <div class="course-item">
       <div class="course-title">Introduction to Deep Learning &amp; Deep Equilibrium Nets</div>
       <div class="course-meta">Econometric Society Summer School in Dynamic Structural Estimation &middot; August 21, 2023</div>
-      <div class="course-meta"><a href="https://github.com/dseconf/DSE2023" target="_blank">Course Materials</a></div>
+      <div class="course-meta"><a href="https://github.com/dseconf/DSE2023" target="_blank" rel="noopener noreferrer">Course Materials</a></div>
     </div>
 
     <div class="course-item">
       <div class="course-title">PhD Course: Quantitative Macroeconomic Theory / Computational Economics</div>
       <div class="course-meta">University of Pennsylvania &middot; January 19&ndash;April 27, 2023 &middot; Advanced computational methods for dynamic stochastic economic models</div>
-      <div class="course-meta"><a href="https://drive.google.com/file/d/1yHn_93O2-nHdkW-oWDDQE9hS_w528HFx/view?usp=share_link" target="_blank">Syllabus</a></div>
+      <div class="course-meta"><a href="https://drive.google.com/file/d/1yHn_93O2-nHdkW-oWDDQE9hS_w528HFx/view?usp=share_link" target="_blank" rel="noopener noreferrer">Syllabus</a></div>
     </div>
   </div>
 
@@ -105,25 +122,25 @@
     <div class="course-item">
       <div class="course-title">Advanced Methods in Computational Economics</div>
       <div class="course-meta">CREST/ENSAE &middot; November 14&ndash;22, 2022 &middot; Sparse Grids, Deep Equilibrium Nets, Deep Structural Estimation</div>
-      <div class="course-meta"><a href="https://github.com/sischei/crest_comp_econ" target="_blank">Course Materials</a></div>
+      <div class="course-meta"><a href="https://github.com/sischei/crest_comp_econ" target="_blank" rel="noopener noreferrer">Course Materials</a></div>
     </div>
 
     <div class="course-item">
       <div class="course-title">Deep Equilibrium Nets &amp; Deep Structural Estimation</div>
       <div class="course-meta">CSCS-USI HPC/Data Analytics Summer University &middot; July 11&ndash;21, 2022</div>
-      <div class="course-meta"><a href="https://github.com/eth-cscs/SummerUniversity2022" target="_blank">Course Materials</a></div>
+      <div class="course-meta"><a href="https://github.com/eth-cscs/SummerUniversity2022" target="_blank" rel="noopener noreferrer">Course Materials</a></div>
     </div>
 
     <div class="course-item">
       <div class="course-title">Advanced Data Analytics</div>
       <div class="course-meta">HEC Lausanne &middot; February&ndash;May 2022</div>
-      <div class="course-meta"><a href="https://drive.google.com/file/d/1Uxew3pMMvkshY7hG6hpCYmnbWTn5uZa9/view?usp=sharing" target="_blank">Syllabus</a></div>
+      <div class="course-meta"><a href="https://drive.google.com/file/d/1Uxew3pMMvkshY7hG6hpCYmnbWTn5uZa9/view?usp=sharing" target="_blank" rel="noopener noreferrer">Syllabus</a></div>
     </div>
 
     <div class="course-item">
       <div class="course-title">Advanced Programming</div>
       <div class="course-meta">HEC Lausanne &middot; February&ndash;May 2022 &middot; Python, C++, OpenMP, MPI, Hybrid Parallel Programming</div>
-      <div class="course-meta"><a href="https://drive.google.com/file/d/14vKMW1WJ2ZCQui9ecRe9DOpPWCi-zysT/view?usp=sharing" target="_blank">Syllabus</a></div>
+      <div class="course-meta"><a href="https://drive.google.com/file/d/14vKMW1WJ2ZCQui9ecRe9DOpPWCi-zysT/view?usp=sharing" target="_blank" rel="noopener noreferrer">Syllabus</a></div>
     </div>
   </div>
 
@@ -134,13 +151,13 @@
     <div class="course-item">
       <div class="course-title">Deep Equilibrium Nets &amp; Deep Structural Estimation</div>
       <div class="course-meta">Econometric Society DSE Conference &middot; August 22, 2021</div>
-      <div class="course-meta"><a href="https://github.com/dseconf/DSE2021/tree/master/17_DEQN_Scheidegger" target="_blank">Course Materials</a></div>
+      <div class="course-meta"><a href="https://github.com/dseconf/DSE2021/tree/master/17_DEQN_Scheidegger" target="_blank" rel="noopener noreferrer">Course Materials</a></div>
     </div>
 
     <div class="course-item">
       <div class="course-title">Deep Learning Module</div>
       <div class="course-meta">CSCS-USI Summer School on HPC &middot; July 19&ndash;30, 2021 (2-day module)</div>
-      <div class="course-meta"><a href="https://github.com/eth-cscs/SummerSchool2021/tree/main/topics/deep_learning" target="_blank">Course Materials</a></div>
+      <div class="course-meta"><a href="https://github.com/eth-cscs/SummerSchool2021/tree/main/topics/deep_learning" target="_blank" rel="noopener noreferrer">Course Materials</a></div>
     </div>
 
     <div class="course-item">
@@ -156,7 +173,7 @@
     <div class="course-item">
       <div class="course-title">Digitise, Optimise, Visualize</div>
       <div class="course-meta">USI Lugano &middot; February 10&ndash;16, 2021 &middot; 5-day crash course on applied ML in economics and finance</div>
-      <div class="course-meta"><a href="https://www.usi.ch/en/education/lifelong-learning/summer-winter-school/dov" target="_blank">Details</a></div>
+      <div class="course-meta"><a href="https://www.usi.ch/en/education/lifelong-learning/summer-winter-school/dov" target="_blank" rel="noopener noreferrer">Details</a></div>
     </div>
   </div>
 
@@ -166,8 +183,8 @@
 
     <div class="course-item">
       <div class="course-title">Deep Learning Module</div>
-      <div class="course-meta"><a href="https://github.com/eth-cscs/SummerSchool2020" target="_blank">CSCS-USI Summer School on HPC</a> &middot; July 13&ndash;24, 2020 (2-day module)</div>
-      <div class="course-meta"><a href="https://github.com/sischei/Deep_Learning_Intro" target="_blank">Course Materials</a></div>
+      <div class="course-meta"><a href="https://github.com/eth-cscs/SummerSchool2020" target="_blank" rel="noopener noreferrer">CSCS-USI Summer School on HPC</a> &middot; July 13&ndash;24, 2020 (2-day module)</div>
+      <div class="course-meta"><a href="https://github.com/sischei/Deep_Learning_Intro" target="_blank" rel="noopener noreferrer">Course Materials</a></div>
     </div>
 
     <div class="course-item">
@@ -208,7 +225,7 @@
     <div class="course-item">
       <div class="course-title">Global Solution Methods</div>
       <div class="course-meta">Yale Cowles Foundation &middot; January&ndash;February 2019 &middot; Python, Adaptive Sparse Grids, ML for large-scale dynamic stochastic models</div>
-      <div class="course-meta"><a href="https://github.com/sischei/global_solution_yale19" target="_blank">Course Materials</a></div>
+      <div class="course-meta"><a href="https://github.com/sischei/global_solution_yale19" target="_blank" rel="noopener noreferrer">Course Materials</a></div>
     </div>
   </div>
 
@@ -224,13 +241,13 @@
     <div class="course-item">
       <div class="course-title">Advanced Scientific Computing and Parallel Programming</div>
       <div class="course-meta">Open Source Macroeconomics Lab, BFI, University of Chicago &middot; July 2018</div>
-      <div class="course-meta"><a href="https://github.com/sischei/OSE2019" target="_blank">Course Materials</a></div>
+      <div class="course-meta"><a href="https://github.com/sischei/OSE2019" target="_blank" rel="noopener noreferrer">Course Materials</a></div>
     </div>
 
     <div class="course-item">
       <div class="course-title">Parallel Programming &amp; HPC / Adaptive Sparse Grids</div>
       <div class="course-meta">Copenhagen Centre for Computational Economics &middot; June 2018</div>
-      <div class="course-meta"><a href="https://www.econ.ku.dk/cce/events/summerschool/" target="_blank">Details</a></div>
+      <div class="course-meta"><a href="https://www.econ.ku.dk/cce/events/summerschool/" target="_blank" rel="noopener noreferrer">Details</a></div>
     </div>
 
     <div class="course-item">
@@ -246,7 +263,7 @@
     <div class="course-item">
       <div class="course-title">Parallel Programming &amp; Adaptive Sparse Grids</div>
       <div class="course-meta">OSM Lab, Becker Friedman Institute, University of Chicago &middot; Summer 2017</div>
-      <div class="course-meta"><a href="https://github.com/OpenSourceMacro/BootCamp2017#1-osm-lab-leadership" target="_blank">Course Materials</a></div>
+      <div class="course-meta"><a href="https://github.com/OpenSourceMacro/BootCamp2017#1-osm-lab-leadership" target="_blank" rel="noopener noreferrer">Course Materials</a></div>
     </div>
 
     <div class="course-item">

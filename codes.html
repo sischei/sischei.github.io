@@ -3,18 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Codes - Simon Scheidegger</title>
+  <title>Code &amp; Software | Simon Scheidegger</title>
+  <meta name="description" content="Open-source research code and replication packages by Simon Scheidegger.">
+  <link rel="canonical" href="https://sischei.github.io/codes.html">
+  <meta property="og:site_name" content="Simon Scheidegger">
+  <meta property="og:title" content="Code &amp; Software | Simon Scheidegger">
+  <meta property="og:description" content="Open-source research code and replication packages.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sischei.github.io/codes.html">
+  <meta property="og:image" content="https://sischei.github.io/assets/portrait-share.jpg">
+  <meta property="og:image:alt" content="Portrait of Simon Scheidegger">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Code &amp; Software | Simon Scheidegger">
+  <meta name="twitter:description" content="Open-source research code and replication packages.">
+  <meta name="twitter:image" content="https://sischei.github.io/assets/portrait-share.jpg">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <nav class="navbar">
   <div class="navbar-inner">
     <a href="index.html" class="nav-brand">Simon Scheidegger</a>
-    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
-    <ul class="nav-links">
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="site-navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links" id="site-navigation">
       <li><a href="index.html">Home</a></li>
       <li><a href="cv.html">CV</a></li>
       <li><a href="publications.html">Publications</a></li>
@@ -33,143 +50,143 @@
   </div>
 </header>
 
-<main class="main">
+<main class="main" id="main-content">
 
   <div class="repo-card">
-    <img class="repo-img" src="assets/code_climate.jpg" alt="Climate in Climate Economics">
+    <img class="repo-img" src="assets/code_climate.jpg" alt="Climate in Climate Economics" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>The Climate in Climate Economics</h3>
       <p>Deep Learning for Integrated Assessment Models</p>
       <div class="repo-links">
-        <a class="badge badge-code" href="https://github.com/ClimateChangeEcon/Climate_in_Climate_Economics" target="_blank">GitHub</a>
-        <a class="badge badge-journal" href="https://academic.oup.com/restud/advance-article-abstract/doi/10.1093/restud/rdae011/7593489" target="_blank">Review of Economic Studies</a>
-        <a class="badge badge-pdf" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3885021" target="_blank">SSRN</a>
+        <a class="badge badge-code" href="https://github.com/ClimateChangeEcon/Climate_in_Climate_Economics" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="badge badge-journal" href="https://academic.oup.com/restud/advance-article-abstract/doi/10.1093/restud/rdae011/7593489" target="_blank" rel="noopener noreferrer">Review of Economic Studies</a>
+        <a class="badge badge-pdf" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3885021" target="_blank" rel="noopener noreferrer">SSRN</a>
       </div>
     </div>
   </div>
 
   <div class="repo-card">
-    <img class="repo-img" src="assets/code_carbontax.jpg" alt="Carbon Tax Rules">
+    <img class="repo-img" src="assets/code_carbontax.jpg" alt="Carbon Tax Rules" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>Using ML to Compute Constrained Optimal Carbon Tax Rules</h3>
       <p>Machine learning methods for optimal carbon taxation policy</p>
       <div class="repo-links">
-        <a class="badge badge-code" href="https://github.com/sischei/JPE_Macro_Using_ML_to_compute_constrained_optimal_carbon_tax_rules" target="_blank">GitHub</a>
-        <a class="badge badge-pdf" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5335457" target="_blank">Paper</a>
+        <a class="badge badge-code" href="https://github.com/sischei/JPE_Macro_Using_ML_to_compute_constrained_optimal_carbon_tax_rules" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="badge badge-pdf" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5335457" target="_blank" rel="noopener noreferrer">Paper</a>
       </div>
     </div>
   </div>
 
   <div class="repo-card">
-    <img class="repo-img" src="assets/code_incentive.jpg" alt="Dynamic Incentive Problems">
+    <img class="repo-img" src="assets/code_incentive.jpg" alt="Dynamic Incentive Problems" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>Machine Learning for Dynamic Incentive Problems</h3>
       <p>Gaussian processes for dynamic economic modeling &middot; Conditionally accepted, <em>Review of Economic Studies</em></p>
       <div class="repo-links">
-        <a class="badge badge-code" href="https://github.com/GaussianProcessesForDynamicEcon/DynamicIncentiveProblems" target="_blank">GitHub</a>
-        <a class="badge badge-pdf" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3282487" target="_blank">SSRN</a>
+        <a class="badge badge-code" href="https://github.com/GaussianProcessesForDynamicEcon/DynamicIncentiveProblems" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="badge badge-pdf" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3282487" target="_blank" rel="noopener noreferrer">SSRN</a>
       </div>
     </div>
   </div>
 
   <div class="repo-card">
-    <img class="repo-img" src="assets/code_deqn.jpg" alt="Deep Equilibrium Nets">
+    <img class="repo-img" src="assets/code_deqn.jpg" alt="Deep Equilibrium Nets" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>Deep Equilibrium Nets</h3>
       <p>Neural network approach to computing economic equilibria</p>
       <div class="repo-links">
-        <a class="badge badge-code" href="https://github.com/sischei/DeepEquilibriumNets" target="_blank">GitHub</a>
-        <a class="badge badge-journal" href="https://onlinelibrary.wiley.com/doi/epdf/10.1111/iere.12575" target="_blank">International Economic Review</a>
+        <a class="badge badge-code" href="https://github.com/sischei/DeepEquilibriumNets" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="badge badge-journal" href="https://onlinelibrary.wiley.com/doi/epdf/10.1111/iere.12575" target="_blank" rel="noopener noreferrer">International Economic Review</a>
       </div>
     </div>
   </div>
 
   <div class="repo-card">
-    <img class="repo-img" src="assets/code_emulators.jpg" alt="Climate Emulators">
+    <img class="repo-img" src="assets/code_emulators.jpg" alt="Climate Emulators" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>Building Interpretable Climate Emulators for Economics</h3>
       <p>Interpretable ML models for climate-economy integration</p>
       <div class="repo-links">
-        <a class="badge badge-code" href="https://github.com/ClimateChangeEcon/Building_Interpretable_Climate_Emulators_forEconomics" target="_blank">GitHub</a>
-        <a class="badge badge-journal" href="https://academic.oup.com/ej/advance-article-abstract/doi/10.1093/ej/ueaf131/8373818" target="_blank">Economic Journal</a>
-        <a class="badge badge-pdf" href="https://arxiv.org/abs/2411.10768" target="_blank">ArXiv</a>
+        <a class="badge badge-code" href="https://github.com/ClimateChangeEcon/Building_Interpretable_Climate_Emulators_forEconomics" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="badge badge-journal" href="https://academic.oup.com/ej/advance-article-abstract/doi/10.1093/ej/ueaf131/8373818" target="_blank" rel="noopener noreferrer">Economic Journal</a>
+        <a class="badge badge-pdf" href="https://arxiv.org/abs/2411.10768" target="_blank" rel="noopener noreferrer">ArXiv</a>
       </div>
     </div>
   </div>
 
   <div class="repo-card">
-    <img class="repo-img" src="assets/code_surrogate.jpg" alt="Deep Surrogate Finance">
+    <img class="repo-img" src="assets/code_surrogate.jpg" alt="Deep Surrogate Finance" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>Deep Surrogates for Finance: Option Pricing</h3>
       <p>Deep learning surrogates for financial applications</p>
       <div class="repo-links">
-        <a class="badge badge-code" href="https://github.com/DeepSurrogate/OptionPricing" target="_blank">GitHub</a>
-        <a class="badge badge-journal" href="https://www.sciencedirect.com/science/article/pii/S0304405X25002302?dgcid=coauthor" target="_blank">J. Financial Economics</a>
-        <a class="badge badge-pdf" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3782722" target="_blank">SSRN</a>
+        <a class="badge badge-code" href="https://github.com/DeepSurrogate/OptionPricing" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="badge badge-journal" href="https://www.sciencedirect.com/science/article/pii/S0304405X25002302?dgcid=coauthor" target="_blank" rel="noopener noreferrer">J. Financial Economics</a>
+        <a class="badge badge-pdf" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3782722" target="_blank" rel="noopener noreferrer">SSRN</a>
       </div>
     </div>
   </div>
 
   <div class="repo-card">
-    <img class="repo-img" src="assets/code_sje.jpg" alt="Self-Justified Equilibria">
+    <img class="repo-img" src="assets/code_sje.jpg" alt="Self-Justified Equilibria" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>Self-Justified Equilibria: Existence and Computation</h3>
       <p>Computational methods for self-justified equilibria</p>
       <div class="repo-links">
-        <a class="badge badge-code" href="https://github.com/sischei/self_justified_equilibria" target="_blank">GitHub</a>
-        <a class="badge badge-journal" href="https://academic.oup.com/jeea/advance-article/doi/10.1093/jeea/jvaf062/8383405" target="_blank">J. European Economic Association</a>
+        <a class="badge badge-code" href="https://github.com/sischei/self_justified_equilibria" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="badge badge-journal" href="https://academic.oup.com/jeea/advance-article/doi/10.1093/jeea/jvaf062/8383405" target="_blank" rel="noopener noreferrer">J. European Economic Association</a>
       </div>
     </div>
   </div>
 
   <div class="repo-card">
-    <img class="repo-img" src="assets/code_hdmr.jpg" alt="HDMR">
+    <img class="repo-img" src="assets/code_hdmr.jpg" alt="HDMR" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>High-Dimensional Dynamic Stochastic Model Representation</h3>
       <p>HDMR methods for high-dimensional economic models</p>
       <div class="repo-links">
-        <a class="badge badge-code" href="https://github.com/SparseGridsForDynamicEcon/HDMR" target="_blank">GitHub</a>
-        <a class="badge badge-journal" href="https://epubs.siam.org/doi/10.1137/21M1392231" target="_blank">SIAM J. Sci. Comput.</a>
+        <a class="badge badge-code" href="https://github.com/SparseGridsForDynamicEcon/HDMR" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="badge badge-journal" href="https://epubs.siam.org/doi/10.1137/21M1392231" target="_blank" rel="noopener noreferrer">SIAM J. Sci. Comput.</a>
       </div>
     </div>
   </div>
 
   <div class="repo-card">
-    <img class="repo-img" src="assets/code_sparse.jpg" alt="Sparse Grids">
+    <img class="repo-img" src="assets/code_sparse.jpg" alt="Sparse Grids" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>Sparse Grids for Dynamic Economic Models</h3>
       <p>Handbook chapter with code on sparse grid methods</p>
       <div class="repo-links">
-        <a class="badge badge-code" href="https://github.com/SparseGridsForDynamicEcon/SparseGrids_in_econ_handbook" target="_blank">GitHub</a>
-        <a class="badge badge-journal" href="https://oxfordre.com/economics/view/10.1093/acrefore/9780190625979.001.0001/acrefore-9780190625979-e-820" target="_blank">Oxford Research Encyclopedia</a>
-        <a class="badge badge-pdf" href="https://github.com/SparseGridsForDynamicEcon/SparseGrids_in_econ_handbook/blob/master/doc/sparse_grids_in_econ.pdf" target="_blank">PDF</a>
+        <a class="badge badge-code" href="https://github.com/SparseGridsForDynamicEcon/SparseGrids_in_econ_handbook" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="badge badge-journal" href="https://oxfordre.com/economics/view/10.1093/acrefore/9780190625979.001.0001/acrefore-9780190625979-e-820" target="_blank" rel="noopener noreferrer">Oxford Research Encyclopedia</a>
+        <a class="badge badge-pdf" href="https://github.com/SparseGridsForDynamicEcon/SparseGrids_in_econ_handbook/blob/master/doc/sparse_grids_in_econ.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
       </div>
     </div>
   </div>
 
   <div class="repo-card">
-    <img class="repo-img" src="assets/code_squic.jpg" alt="SQUIC">
+    <img class="repo-img" src="assets/code_squic.jpg" alt="SQUIC" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>SQUIC</h3>
       <p>Second-order, L1-regularized maximum likelihood method for performant large-scale sparse precision matrix estimation. Shared library (libSQUIC) for Linux and macOS with APIs for Python, R, and C++.</p>
       <div class="repo-links">
-        <a class="badge badge-code" href="https://www.gitlab.ci.inf.usi.ch/SQUIC/libSQUIC" target="_blank">GitLab</a>
-        <a class="badge badge-pdf" href="https://epubs.siam.org/doi/abs/10.1137/17M1147615?journalCode=sjoce3" target="_blank">Paper 1</a>
-        <a class="badge badge-pdf" href="https://www.sciencedirect.com/science/article/pii/S1877750321000776" target="_blank">Paper 2</a>
-        <a class="badge badge-journal" href="https://dl.acm.org/doi/abs/10.1145/3650108" target="_blank">Manual</a>
+        <a class="badge badge-code" href="https://www.gitlab.ci.inf.usi.ch/SQUIC/libSQUIC" target="_blank" rel="noopener noreferrer">GitLab</a>
+        <a class="badge badge-pdf" href="https://epubs.siam.org/doi/abs/10.1137/17M1147615?journalCode=sjoce3" target="_blank" rel="noopener noreferrer">Paper 1</a>
+        <a class="badge badge-pdf" href="https://www.sciencedirect.com/science/article/pii/S1877750321000776" target="_blank" rel="noopener noreferrer">Paper 2</a>
+        <a class="badge badge-journal" href="https://dl.acm.org/doi/abs/10.1145/3650108" target="_blank" rel="noopener noreferrer">Manual</a>
       </div>
     </div>
   </div>
 
   <div class="repo-card">
-    <img class="repo-img" src="assets/code_carbon_repl.jpg" alt="Carbon Taxation">
+    <img class="repo-img" src="assets/code_carbon_repl.jpg" alt="Carbon Taxation" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>Can Today's and Tomorrow's World Uniformly Gain from Carbon Taxation?</h3>
       <p>Replication code for the carbon taxation study</p>
       <div class="repo-links">
-        <a class="badge badge-code" href="https://github.com/ClimateChangeEcon/Can_Todays_and_Tomorrows_World_Uniformly_Gain_from_Carbon_Taxation/tree/main" target="_blank">GitHub</a>
-        <a class="badge badge-journal" href="https://www.sciencedirect.com/science/article/pii/S001429212400148X" target="_blank">European Economic Review</a>
-        <a class="badge badge-pdf" href="https://www.nber.org/papers/w29224" target="_blank">NBER</a>
+        <a class="badge badge-code" href="https://github.com/ClimateChangeEcon/Can_Todays_and_Tomorrows_World_Uniformly_Gain_from_Carbon_Taxation/tree/main" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="badge badge-journal" href="https://www.sciencedirect.com/science/article/pii/S001429212400148X" target="_blank" rel="noopener noreferrer">European Economic Review</a>
+        <a class="badge badge-pdf" href="https://www.nber.org/papers/w29224" target="_blank" rel="noopener noreferrer">NBER</a>
       </div>
     </div>
   </div>

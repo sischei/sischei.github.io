@@ -3,18 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simon Scheidegger - Associate Professor, HEC Lausanne</title>
+  <title>Simon Scheidegger | Computational Economics, Finance, and AI</title>
+  <meta name="description" content="Personal website of Simon Scheidegger, Associate Professor at HEC Lausanne. Research in computational macroeconomics, finance, climate economics, and machine learning.">
+  <link rel="canonical" href="https://sischei.github.io/">
+  <meta property="og:site_name" content="Simon Scheidegger">
+  <meta property="og:title" content="Simon Scheidegger | Computational Economics, Finance, and AI">
+  <meta property="og:description" content="Research in computational macroeconomics, finance, climate economics, and machine learning at HEC Lausanne.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sischei.github.io/">
+  <meta property="og:image" content="https://sischei.github.io/assets/portrait-share.jpg">
+  <meta property="og:image:alt" content="Portrait of Simon Scheidegger">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Simon Scheidegger">
+  <meta name="twitter:description" content="Computational economics, finance, climate economics, and machine learning.">
+  <meta name="twitter:image" content="https://sischei.github.io/assets/portrait-share.jpg">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <nav class="navbar">
   <div class="navbar-inner">
     <a href="index.html" class="nav-brand">Simon Scheidegger</a>
-    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
-    <ul class="nav-links">
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="site-navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links" id="site-navigation">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="cv.html">CV</a></li>
       <li><a href="publications.html">Publications</a></li>
@@ -28,75 +45,155 @@
 
 <header class="hero">
   <div class="hero-inner">
-    <img src="assets/photo.jpg" alt="Simon Scheidegger" class="hero-photo">
+    <img src="assets/photo-hero.jpg" alt="Simon Scheidegger" class="hero-photo" width="480" height="480" fetchpriority="high">
     <div class="hero-text">
+      <p class="eyebrow">Computational Economics, Finance, and AI</p>
       <h1>Simon Scheidegger</h1>
-      <p class="subtitle">Associate Professor (tenured), <a href="https://www.unil.ch/de/home.html" style="color:var(--accent);">Department of Economics, HEC Lausanne</a></p>
-      <p class="subtitle" style="font-size:.92rem; opacity:.78;">Visiting Senior Fellow, <a href="https://www.lse.ac.uk/granthaminstitute/" style="color:var(--accent);">Grantham Research Institute</a>, <a href="https://www.lse.ac.uk/" style="color:var(--accent);">LSE</a> (2025&ndash;)</p>
+      <p class="subtitle">Associate Professor (tenured), <a href="https://www.unil.ch/de/home.html">Department of Economics, HEC Lausanne</a></p>
+      <p class="subtitle subtitle-muted">Visiting Senior Fellow, <a href="https://www.lse.ac.uk/granthaminstitute/" target="_blank" rel="noopener noreferrer">Grantham Research Institute</a>, <a href="https://www.lse.ac.uk/" target="_blank" rel="noopener noreferrer">LSE</a> (2025&ndash;)</p>
+      <p class="hero-lede">I develop machine learning algorithms and scalable computing frameworks for high-dimensional dynamic economic models, with applications in climate policy, macro-finance, and mechanism design.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="publications.html">Selected Publications</a>
+        <a class="button button-secondary" href="codes.html">Code &amp; Software</a>
+        <a class="button button-secondary" href="cv.html">CV &amp; Bio</a>
+      </div>
       <div class="hero-contact">
         Internef 509, CH-1015 Lausanne, Switzerland<br>
         +41 21 692 33 96 &middot; <a href="mailto:simon.scheidegger@unil.ch">simon.scheidegger@unil.ch</a><br>
-        <a href="https://github.com/sischei" target="_blank" style="color:var(--accent);">GitHub</a> &middot; <a href="https://scholar.google.ch/citations?user=PdVLxZwAAAAJ&hl=en" target="_blank" style="color:var(--accent);">Google Scholar</a> &middot; <a href="https://x.com/comp_simon" target="_blank" style="color:var(--accent);">X / Twitter</a>
+        <a href="https://github.com/sischei" target="_blank" rel="noopener noreferrer">GitHub</a> &middot;
+        <a href="https://scholar.google.ch/citations?user=PdVLxZwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> &middot;
+        <a href="https://x.com/comp_simon" target="_blank" rel="noopener noreferrer">X / Twitter</a>
       </div>
+      <ul class="tag-list" aria-label="Research areas">
+        <li class="tag">Climate economics</li>
+        <li class="tag">Macro-finance</li>
+        <li class="tag">Machine learning</li>
+        <li class="tag">High-performance computing</li>
+      </ul>
     </div>
   </div>
 </header>
 
-<main class="main">
+<main class="main" id="main-content">
+  <div class="home-layout">
+    <div class="home-main">
+      <section class="card">
+        <h2>Research</h2>
+        <p>My research lies at the intersection of computational macroeconomics, finance, and artificial intelligence. I build deep learning methods and scalable numerical frameworks for solving high-dimensional dynamic models that were long considered computationally intractable. These tools allow richer quantitative analysis of climate policy, macro-finance, dynamic contracting, and asset pricing.</p>
+        <p>My work has appeared in outlets including <em>Econometrica</em>, the <em>Review of Economic Studies</em>, the <em>Journal of Financial Economics</em>, the <em>Economic Journal</em>, and the <em>Annual Review of Economics</em>.</p>
+      </section>
 
-  <div class="card">
-    <h2>Research</h2>
-    <p>My research lies at the frontier of computational macroeconomics, finance, and artificial intelligence. I develop deep learning algorithms and scalable computing frameworks for solving high-dimensional dynamic economic models&mdash;problems long considered computationally intractable. By breaking the curse of dimensionality, I build the tools needed to capture the true complexity of real-world economies and financial markets&mdash;and use them to answer urgent policy questions in climate economics, macro-finance, and mechanism design. My work has been published in leading academic outlets, including <em>Econometrica</em>, the <em>Review of Economic Studies</em>, the <em>Journal of Financial Economics</em>, and the <em>Economic Journal</em>, among others.</p>
+      <section class="card">
+        <h2>Featured Work</h2>
+        <div class="spotlight-grid">
+          <article class="spotlight-card">
+            <p class="eyebrow">Recent Publication</p>
+            <h3>Deep Surrogates for Finance</h3>
+            <p>Deep learning surrogates for high-dimensional option pricing, published in the <em>Journal of Financial Economics</em> (2026).</p>
+            <div class="repo-links">
+              <a class="badge badge-journal" href="https://www.sciencedirect.com/science/article/pii/S0304405X25002302?dgcid=coauthor" target="_blank" rel="noopener noreferrer">JFE</a>
+              <a class="badge badge-code" href="https://github.com/DeepSurrogate/OptionPricing" target="_blank" rel="noopener noreferrer">Code</a>
+            </div>
+          </article>
+
+          <article class="spotlight-card">
+            <p class="eyebrow">Current Project</p>
+            <h3>Optimal Carbon Tax Rules</h3>
+            <p>Machine learning methods for computing constrained carbon tax policies in high-dimensional climate-economy models.</p>
+            <div class="repo-links">
+              <a class="badge badge-pdf" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5335457" target="_blank" rel="noopener noreferrer">Working Paper</a>
+              <a class="badge badge-code" href="https://github.com/sischei/JPE_Macro_Using_ML_to_compute_constrained_optimal_carbon_tax_rules" target="_blank" rel="noopener noreferrer">Code</a>
+            </div>
+          </article>
+
+          <article class="spotlight-card">
+            <p class="eyebrow">Open Research Software</p>
+            <h3>The Climate in Climate Economics</h3>
+            <p>Open-source code for modern climate emulation and integrated assessment work in economics.</p>
+            <div class="repo-links">
+              <a class="badge badge-code" href="https://github.com/ClimateChangeEcon/Climate_in_Climate_Economics" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="badge badge-journal" href="https://academic.oup.com/restud/advance-article-abstract/doi/10.1093/restud/rdae011/7593489" target="_blank" rel="noopener noreferrer">ReStud</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>News</h2>
+
+        <div class="news-item">
+          <div class="news-date">Summer 2026</div>
+          <div class="news-text">Co-organizing <a href="https://sites.google.com/carloalberto.org/deeplearningsummerschool2026" target="_blank" rel="noopener noreferrer"><strong>AI for Economics and Finance Summer School/Conference</strong></a> at the University of Turin (August 24&ndash;28, 2026).</div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-date">June&ndash;July 2026</div>
+          <div class="news-text">Keynote at the <a href="https://comp-econ.com/32nd-cef-conference/" target="_blank" rel="noopener noreferrer"><strong>32nd International Conference Computing in Economics and Finance</strong></a> (June 29&ndash;July 1, 2026, Venice).</div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-date">July 2026</div>
+          <div class="news-text">Teaching at the <a href="https://liboecon.com/2026_summer_school.html" target="_blank" rel="noopener noreferrer"><strong>PKU-Zurich PhD Summer School on Machine Learning for Macroeconomics and Finance</strong></a> (July 6&ndash;10, 2026, Beijing).</div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-date">2026</div>
+          <div class="news-text">Teaching mini-course on solving integrated assessment models via deep learning at <a href="https://cemracs2026.math.cnrs.fr/en/" target="_blank" rel="noopener noreferrer"><strong>CEMRACS2026</strong></a>.</div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-date">November 2025</div>
+          <div class="news-text"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3282487" target="_blank" rel="noopener noreferrer">Machine Learning for Dynamic Incentive Problems</a> (with P. Renner) conditionally accepted at <em>Review of Economic Studies</em>. <span class="badge badge-accepted">Accepted</span></div>
+        </div>
+      </section>
+    </div>
+
+    <aside class="home-side">
+      <section class="card">
+        <h2>Current Appointments</h2>
+        <ul class="clean-list">
+          <li>
+            <span class="detail-label">HEC Lausanne</span>
+            Associate Professor (tenured), Department of Economics
+          </li>
+          <li>
+            <span class="detail-label">LSE</span>
+            Visiting Senior Fellow, Grantham Research Institute
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Research Areas</h2>
+        <ul class="clean-list">
+          <li>Computational macroeconomics and finance</li>
+          <li>Machine learning for dynamic economic models</li>
+          <li>Climate economics and integrated assessment</li>
+          <li>High-performance computing and numerical methods</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Quick Access</h2>
+        <div class="stack-sm">
+          <a class="button button-dark" href="cv.html">View CV &amp; Summary</a>
+          <a class="button button-outline" href="working-papers.html">Working Papers</a>
+          <a class="button button-outline" href="teaching.html">Teaching</a>
+          <a class="button button-outline" href="https://scholar.google.ch/citations?user=PdVLxZwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Selected Visits &amp; Service</h2>
+        <ul class="clean-list">
+          <li>Visiting Scholar, UPenn Economics (January&ndash;June 2023)</li>
+          <li>Visiting Assistant Professor, MIT Sloan (October&ndash;November 2019)</li>
+          <li>Visiting Faculty, Yale Cowles Foundation (2018&ndash;2019)</li>
+          <li>Associate Editor, <em>Journal of Financial Econometrics</em> (2023&ndash;2025)</li>
+        </ul>
+      </section>
+    </aside>
   </div>
-
-  <div class="card">
-    <h2>News</h2>
-
-    <div class="news-item">
-      <div class="news-date">Summer 2026</div>
-      <div class="news-text">Co-organizing <a href="https://sites.google.com/carloalberto.org/deeplearningsummerschool2026" target="_blank"><strong>AI for Economics and Finance Summer School/Conference</strong></a> at University of Turin (August 24&ndash;28, 2026).</div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">June&ndash;July 2026</div>
-      <div class="news-text">Keynote at the <a href="https://comp-econ.com/32nd-cef-conference/" target="_blank"><strong>32nd International Conference Computing in Economics and Finance</strong></a> (June 29&ndash;July 1, 2026, Venice).</div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">July 2026</div>
-      <div class="news-text">Teaching at the <a href="https://liboecon.com/2026_summer_school.html" target="_blank"><strong>PKU-Zurich PhD Summer School on Machine Learning for Macroeconomics and Finance</strong></a> (July 6&ndash;10, 2026, Beijing).</div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">2026</div>
-      <div class="news-text">Teaching mini-course on solving integrated assessment models via deep learning at <a href="https://cemracs2026.math.cnrs.fr/en/" target="_blank"><strong>CEMRACS2026</strong></a>.</div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">November 2025</div>
-      <div class="news-text"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3282487" target="_blank">"Machine Learning for Dynamic Incentive Problems"</a> (with <a href="https://sites.google.com/site/phrenner/" target="_blank">P. Renner</a>) <strong>conditionally accepted</strong> at <em>Review of Economic Studies</em>. <span class="badge badge-accepted">Accepted</span></div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">June 2025</div>
-      <div class="news-text">New working paper: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5335457" target="_blank">"Using Machine Learning to Compute Constrained Optimal Carbon Tax Rules"</a> (with <a href="https://sites.google.com/site/fkubler/" target="_blank">F. K&uuml;bler</a>, O. Surbeck). <span class="badge badge-new">New</span></div>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>Visiting Positions</h2>
-    <ul style="list-style:none; padding:0;">
-      <li style="padding:.4rem 0;">Visiting Scholar, <a href="https://economics.sas.upenn.edu/people/simon-scheidegger-visiting-spring-2023" target="_blank">UPenn Economics</a> (January&ndash;June 2023)</li>
-      <li style="padding:.4rem 0;">Visiting Assistant Professor, <a href="https://mitsloan.mit.edu/faculty/directory/simon-scheidegger" target="_blank">MIT Sloan School of Management</a> (October&ndash;November 2019)</li>
-      <li style="padding:.4rem 0;">Visiting Faculty, Yale University Cowles Foundation (January&ndash;February 2019, August&ndash;October 2018)</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Professional Service</h2>
-    <p>Associate Editor, <a href="https://academic.oup.com/jfec" target="_blank"><em>Journal of Financial Econometrics</em></a> (2023&ndash;2025)</p>
-  </div>
-
 </main>
 
 <footer class="footer">

@@ -3,18 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conference (Archive) - Simon Scheidegger</title>
+  <title>Conference Archive | Simon Scheidegger</title>
+  <meta name="description" content="Archive of conference organization and programs by Simon Scheidegger.">
+  <link rel="canonical" href="https://sischei.github.io/conference.html">
+  <meta property="og:site_name" content="Simon Scheidegger">
+  <meta property="og:title" content="Conference Archive | Simon Scheidegger">
+  <meta property="og:description" content="Archive of conference organization and programs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sischei.github.io/conference.html">
+  <meta property="og:image" content="https://sischei.github.io/assets/portrait-share.jpg">
+  <meta property="og:image:alt" content="Portrait of Simon Scheidegger">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Conference Archive | Simon Scheidegger">
+  <meta name="twitter:description" content="Archive of conference organization and programs.">
+  <meta name="twitter:image" content="https://sischei.github.io/assets/portrait-share.jpg">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <nav class="navbar">
   <div class="navbar-inner">
     <a href="index.html" class="nav-brand">Simon Scheidegger</a>
-    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
-    <ul class="nav-links">
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="site-navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links" id="site-navigation">
       <li><a href="index.html">Home</a></li>
       <li><a href="cv.html">CV</a></li>
       <li><a href="publications.html">Publications</a></li>
@@ -34,7 +51,7 @@
   </div>
 </header>
 
-<main class="main">
+<main class="main" id="main-content">
 
   <div class="card">
     <h2>Climate Challenge and Economic Policy</h2>
@@ -44,11 +61,11 @@
     <p style="margin-top:.5rem;"><strong>Organizers:</strong></p>
     <ul style="margin-left:1.5rem; margin-top:.3rem;">
       <li>Simon Scheidegger (HEC Lausanne)</li>
-      <li><a href="https://iac.ethz.ch/people-iac/person-detail.NDY3MDg=.TGlzdC82MzcsLTE5NDE2NTk2NTg=.html" target="_blank">Doris Folini</a> (ETH Z&uuml;rich)</li>
-      <li><a href="https://sites.google.com/site/fkubler/" target="_blank">Felix K&uuml;bler</a> (University of Z&uuml;rich &amp; SFI)</li>
+      <li><a href="https://iac.ethz.ch/people-iac/person-detail.NDY3MDg=.TGlzdC82MzcsLTE5NDE2NTk2NTg=.html" target="_blank" rel="noopener noreferrer">Doris Folini</a> (ETH Z&uuml;rich)</li>
+      <li><a href="https://sites.google.com/site/fkubler/" target="_blank" rel="noopener noreferrer">Felix K&uuml;bler</a> (University of Z&uuml;rich &amp; SFI)</li>
     </ul>
     <div style="margin-top:1rem;">
-      <a class="badge badge-pdf" href="https://drive.google.com/file/d/1HoFZnTO08Ro-PZKJhG40UB9nEZK0jZ_D/view?usp=sharing" target="_blank">Program (PDF)</a>
+      <a class="badge badge-pdf" href="https://drive.google.com/file/d/1HoFZnTO08Ro-PZKJhG40UB9nEZK0jZ_D/view?usp=sharing" target="_blank" rel="noopener noreferrer">Program (PDF)</a>
     </div>
     <p style="margin-top:1rem; font-size:.88rem; color:var(--text-light);">Due to space limitations, interested participants should email the organizers to check for remaining open slots.</p>
   </div>

@@ -3,18 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV - Simon Scheidegger</title>
+  <title>CV | Simon Scheidegger</title>
+  <meta name="description" content="Current appointments, selected highlights, and CV download for Simon Scheidegger.">
+  <link rel="canonical" href="https://sischei.github.io/cv.html">
+  <meta property="og:site_name" content="Simon Scheidegger">
+  <meta property="og:title" content="CV | Simon Scheidegger">
+  <meta property="og:description" content="Current appointments, selected highlights, and CV download for Simon Scheidegger.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sischei.github.io/cv.html">
+  <meta property="og:image" content="https://sischei.github.io/assets/portrait-share.jpg">
+  <meta property="og:image:alt" content="Portrait of Simon Scheidegger">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CV | Simon Scheidegger">
+  <meta name="twitter:description" content="Current appointments, selected highlights, and CV download for Simon Scheidegger.">
+  <meta name="twitter:image" content="https://sischei.github.io/assets/portrait-share.jpg">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <nav class="navbar">
   <div class="navbar-inner">
     <a href="index.html" class="nav-brand">Simon Scheidegger</a>
-    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
-    <ul class="nav-links">
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="site-navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links" id="site-navigation">
       <li><a href="index.html">Home</a></li>
       <li><a href="cv.html" class="active">CV</a></li>
       <li><a href="publications.html">Publications</a></li>
@@ -29,18 +46,97 @@
 <header class="page-header">
   <div class="page-header-inner">
     <h1>Curriculum Vitae</h1>
-    <p>Full CV available as PDF</p>
+    <p>Current appointments, selected highlights, and profile links.</p>
+    <div class="page-actions">
+      <a class="button button-primary" href="https://drive.google.com/file/d/1pjlJcwAVzN_5Bax7nJYkD52t8t5Wjopo/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Full CV (PDF)</a>
+      <a class="button button-secondary" href="https://scholar.google.ch/citations?user=PdVLxZwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+    </div>
   </div>
 </header>
 
-<main class="main">
-  <div class="card" style="text-align:center; padding:3rem;">
-    <p style="font-size:1.1rem; margin-bottom:1.5rem;">Download the full CV below:</p>
-    <a href="https://drive.google.com/file/d/1pjlJcwAVzN_5Bax7nJYkD52t8t5Wjopo/view?usp=sharing"
-       target="_blank"
-       style="display:inline-block; background:var(--primary); color:#fff; padding:.8rem 2rem; border-radius:var(--radius); font-weight:600; font-size:.95rem; transition: background .2s;">
-      View CV (PDF)
-    </a>
+<main class="main" id="main-content">
+  <section class="card">
+    <h2>Profile</h2>
+    <p>Simon Scheidegger is Associate Professor (tenured) in the Department of Economics at HEC Lausanne. His research focuses on computational macroeconomics, finance, climate economics, and machine learning, with particular emphasis on high-dimensional dynamic models and scalable numerical methods.</p>
+    <p>He currently serves as Visiting Senior Fellow at the Grantham Research Institute at the London School of Economics.</p>
+  </section>
+
+  <div class="info-grid">
+    <section class="card">
+      <h2>Current Appointments</h2>
+      <ul class="clean-list">
+        <li>
+          <span class="detail-label">Department of Economics, HEC Lausanne</span>
+          Associate Professor (tenured)
+        </li>
+        <li>
+          <span class="detail-label">Grantham Research Institute, LSE</span>
+          Visiting Senior Fellow (2025&ndash;)
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Research Areas</h2>
+      <ul class="clean-list">
+        <li>Computational finance and economics</li>
+        <li>Machine learning and deep learning for dynamic models</li>
+        <li>Climate change economics and integrated assessment</li>
+        <li>High-performance computing and numerical methods</li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="info-grid">
+    <section class="card">
+      <h2>Selected Highlights</h2>
+      <ul class="mini-timeline">
+        <li>
+          <strong>2026</strong>
+          <em>Deep Surrogates for Finance</em> published in the <em>Journal of Financial Economics</em>.
+        </li>
+        <li>
+          <strong>2025</strong>
+          <em>Machine Learning for Dynamic Incentive Problems</em> conditionally accepted at the <em>Review of Economic Studies</em>.
+        </li>
+        <li>
+          <strong>2025</strong>
+          <em>Climate Change through the Lens of Macroeconomic Modeling</em> published in the <em>Annual Review of Economics</em>.
+        </li>
+        <li>
+          <strong>2025</strong>
+          <em>Building Interpretable Climate Emulators for Economics</em> forthcoming in the <em>Economic Journal</em>.
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Visiting Appointments</h2>
+      <ul class="clean-list">
+        <li>Visiting Scholar, UPenn Economics (January&ndash;June 2023)</li>
+        <li>Visiting Assistant Professor, MIT Sloan School of Management (October&ndash;November 2019)</li>
+        <li>Visiting Faculty, Yale University Cowles Foundation (January&ndash;February 2019)</li>
+        <li>Visiting Faculty, Yale University Cowles Foundation (August&ndash;October 2018)</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Selected Service</h2>
+      <ul class="clean-list">
+        <li>Associate Editor, <em>Journal of Financial Econometrics</em> (2023&ndash;2025)</li>
+        <li>Organizer and co-organizer of workshops, seminar series, and summer schools in computational economics, finance, and climate economics.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Profiles &amp; Downloads</h2>
+      <div class="stack-sm">
+        <a class="button button-dark" href="https://drive.google.com/file/d/1pjlJcwAVzN_5Bax7nJYkD52t8t5Wjopo/view?usp=sharing" target="_blank" rel="noopener noreferrer">Full CV (PDF)</a>
+        <a class="button button-outline" href="https://scholar.google.ch/citations?user=PdVLxZwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a class="button button-outline" href="https://github.com/sischei" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="button button-outline" href="mailto:simon.scheidegger@unil.ch">Email</a>
+      </div>
+    </section>
   </div>
 </main>
 
