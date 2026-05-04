@@ -424,6 +424,19 @@ img { max-width: 100%; display: block; }
 
 .spotlight-card h3 { margin-top: 0; }
 
+.coming-soon-card .eyebrow {
+  color: var(--primary-light);
+  margin-bottom: .35rem;
+}
+.coming-soon-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: calc(var(--radius) - 2px);
+  border: 1px solid var(--border);
+  margin: .75rem 0;
+}
+
 .stack-sm > * + * { margin-top: .9rem; }
 .stack-sm .button { width: 100%; }
 
