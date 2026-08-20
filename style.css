@@ -273,6 +273,7 @@ img { max-width: 100%; display: block; }
 .badge-new       { background: #ffe8e8; color: #c0392b; }
 .badge-accepted  { background: #e8f4fd; color: #1a6fb5; }
 .badge-wp        { background: #f3e8fd; color: #7b2ea8; }
+.badge-book      { background: #fdeef6; color: #b52e78; }
 
 .tag-list,
 .clean-list {
