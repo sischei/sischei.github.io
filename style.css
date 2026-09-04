@@ -275,6 +275,8 @@ img { max-width: 100%; display: block; }
 .badge-wp        { background: #f3e8fd; color: #7b2ea8; }
 .badge-book      { background: #fdeef6; color: #b52e78; }
 .badge-quantecon { background: #e6f6f7; color: #147a86; }
+.badge-event     { background: #fff4e0; color: #b0601a; }
+.badge-video     { background: #ffe8e8; color: #c0392b; }
 
 .tag-list,
 .clean-list {
