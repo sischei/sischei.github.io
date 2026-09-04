@@ -408,6 +408,9 @@ img { max-width: 100%; display: block; }
   gap: 1.5rem;
 }
 
+.home-main > .card,
+.home-side > .card { margin-bottom: 0; }
+
 .spotlight-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -431,6 +434,13 @@ img { max-width: 100%; display: block; }
 .coming-soon-card .eyebrow {
   color: var(--primary-light);
   margin-bottom: .35rem;
+}
+.coming-soon-card h2 {
+  font-size: 1rem;
+  line-height: 1.35;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: .25rem;
 }
 .coming-soon-image {
   display: block;
