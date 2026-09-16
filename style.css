@@ -271,12 +271,11 @@ img { max-width: 100%; display: block; }
 .badge-code      { background: #e6f9ee; color: #1a8a4a; }
 .badge-pdf       { background: #fef3e2; color: #b5741a; }
 .badge-new       { background: #ffe8e8; color: #c0392b; }
-.badge-accepted  { background: #e8f4fd; color: #1a6fb5; }
-.badge-wp        { background: #f3e8fd; color: #7b2ea8; }
 .badge-book      { background: #fdeef6; color: #b52e78; }
 .badge-quantecon { background: #e6f6f7; color: #147a86; }
 .badge-event     { background: #fff4e0; color: #b0601a; }
-.badge-video     { background: #ffe8e8; color: #c0392b; }
+.badge-media     { background: #ecebff; color: #4b3fbf; }
+.badge-press     { background: #eef1f5; color: #4a5568; }
 
 .tag-list,
 .clean-list {
@@ -327,7 +326,9 @@ img { max-width: 100%; display: block; }
 .pub-title a:hover { color: var(--accent); text-decoration: underline; }
 .pub-authors { font-size: .85rem; color: var(--text-light); margin: .2rem 0; }
 .pub-venue { font-size: .85rem; color: var(--text-light); font-style: italic; }
-.pub-links { margin-top: .4rem; display: flex; gap: .5rem; flex-wrap: wrap; }
+.pub-links,
+.repo-links,
+.seminar-links { margin-top: .5rem; display: flex; gap: .5rem; flex-wrap: wrap; }
 
 /* ===== Announcement Banner ===== */
 .announcement-banner {
@@ -470,7 +471,6 @@ img { max-width: 100%; display: block; }
 .repo-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-1px); }
 .repo-card h3 { font-size: .95rem; margin-bottom: .4rem; color: var(--primary); }
 .repo-card p { font-size: .85rem; color: var(--text-light); margin-bottom: .6rem; }
-.repo-links { display: flex; gap: .5rem; flex-wrap: wrap; }
 .repo-img { width: 240px; height: 160px; object-fit: contain; border-radius: 6px; flex-shrink: 0; background: #f5f7fa; border: 1px solid var(--border); }
 .repo-body { flex: 1; min-width: 0; }
 @media (max-width: 768px) {
@@ -484,7 +484,6 @@ img { max-width: 100%; display: block; }
 .seminar-date { font-size: .8rem; font-weight: 600; color: var(--primary-light); }
 .seminar-speaker { font-weight: 600; font-size: .92rem; }
 .seminar-topic { font-size: .88rem; color: var(--text-light); font-style: italic; }
-.seminar-links { margin-top: .3rem; display: flex; gap: .5rem; }
 
 /* ===== Teaching ===== */
 .teaching-year { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin: 1.5rem 0 .75rem; padding-bottom: .3rem; border-bottom: 1px solid var(--border); }
