@@ -52,7 +52,15 @@
 
 <main class="main" id="main-content">
 
-  <div class="repo-card">
+  <div class="repo-filters" role="group" aria-label="Filter by topic">
+    <button type="button" class="repo-filter" data-repo-filter="all" aria-pressed="true">All</button>
+    <button type="button" class="repo-filter" data-repo-filter="climate" aria-pressed="false">Climate Economics using Machine Learning</button>
+    <button type="button" class="repo-filter" data-repo-filter="ml" aria-pressed="false">Machine Learning Methods</button>
+    <button type="button" class="repo-filter" data-repo-filter="numerics" aria-pressed="false">Numerical Methods</button>
+  </div>
+
+  <div class="repo-grid">
+  <div class="repo-card" data-topic="ml">
     <img class="repo-img" src="assets/code_incentive.jpg" alt="Dynamic Incentive Problems" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>Machine Learning for Dynamic Incentive Problems</h3>
@@ -65,7 +73,7 @@
     </div>
   </div>
 
-  <div class="repo-card">
+  <div class="repo-card" data-topic="climate">
     <img class="repo-img" src="assets/code_carbontax.jpg" alt="Carbon Tax Rules" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>Using ML to Compute Constrained Optimal Carbon Tax Rules</h3>
@@ -78,7 +86,7 @@
     </div>
   </div>
 
-  <div class="repo-card">
+  <div class="repo-card" data-topic="ml">
     <img class="repo-img" src="assets/code_surrogate.jpg" alt="Deep Surrogate Finance" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>Deep Surrogates for Finance: Option Pricing</h3>
@@ -91,7 +99,7 @@
     </div>
   </div>
 
-  <div class="repo-card">
+  <div class="repo-card" data-topic="climate">
     <img class="repo-img" src="assets/code_emulators.jpg" alt="Climate Emulators" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>Building Interpretable Climate Emulators for Economics</h3>
@@ -104,7 +112,7 @@
     </div>
   </div>
 
-  <div class="repo-card">
+  <div class="repo-card" data-topic="ml">
     <img class="repo-img" src="assets/code_sje.jpg" alt="Self-Justified Equilibria" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>Self-Justified Equilibria: Existence and Computation</h3>
@@ -116,7 +124,7 @@
     </div>
   </div>
 
-  <div class="repo-card">
+  <div class="repo-card" data-topic="climate">
     <img class="repo-img" src="assets/code_climate.jpg" alt="Climate in Climate Economics" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>The Climate in Climate Economics</h3>
@@ -129,7 +137,7 @@
     </div>
   </div>
 
-  <div class="repo-card">
+  <div class="repo-card" data-topic="climate">
     <img class="repo-img" src="assets/code_carbon_repl.jpg" alt="Carbon Taxation" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>Can Today's and Tomorrow's World Uniformly Gain from Carbon Taxation?</h3>
@@ -142,7 +150,7 @@
     </div>
   </div>
 
-  <div class="repo-card">
+  <div class="repo-card" data-topic="numerics">
     <img class="repo-img" src="assets/code_squic.jpg" alt="SQUIC" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>SQUIC</h3>
@@ -156,7 +164,7 @@
     </div>
   </div>
 
-  <div class="repo-card">
+  <div class="repo-card" data-topic="ml">
     <img class="repo-img" src="assets/code_deqn.jpg" alt="Deep Equilibrium Nets" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>Deep Equilibrium Nets</h3>
@@ -168,7 +176,7 @@
     </div>
   </div>
 
-  <div class="repo-card">
+  <div class="repo-card" data-topic="numerics">
     <img class="repo-img" src="assets/code_sparse.jpg" alt="Sparse Grids" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>Sparse Grids for Dynamic Economic Models</h3>
@@ -181,7 +189,7 @@
     </div>
   </div>
 
-  <div class="repo-card">
+  <div class="repo-card" data-topic="numerics">
     <img class="repo-img" src="assets/code_hdmr.jpg" alt="HDMR" loading="lazy" decoding="async" width="240" height="160">
     <div class="repo-body">
       <h3>High-Dimensional Dynamic Stochastic Model Representation</h3>
@@ -191,6 +199,8 @@
         <a class="badge badge-code" href="https://github.com/SparseGridsForDynamicEcon/HDMR" target="_blank" rel="noopener noreferrer">Code</a>
       </div>
     </div>
+  </div>
+
   </div>
 
 </main>

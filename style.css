@@ -477,6 +477,26 @@ img { max-width: 100%; display: block; }
   .repo-card { flex-direction: column; }
   .repo-img { width: 100%; height: auto; max-height: 240px; }
 }
+.repo-filters { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.25rem; }
+.repo-filter {
+  font: inherit;
+  font-size: .85rem;
+  font-weight: 600;
+  padding: .4rem .9rem;
+  border-radius: 99px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--primary);
+  cursor: pointer;
+}
+.repo-filter:hover { background: #f5f8fc; }
+.repo-filter[aria-pressed="true"] { background: var(--primary); border-color: var(--primary); color: #fff; }
+.repo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.repo-grid .repo-card { flex-direction: column; margin-bottom: 0; }
+.repo-grid .repo-img { width: 100%; height: 160px; }
+@media (max-width: 768px) {
+  .repo-grid { grid-template-columns: 1fr; }
+}
 
 /* ===== Seminar Schedule ===== */
 .seminar-item { padding: .8rem 0; border-bottom: 1px solid var(--border); }

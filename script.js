@@ -36,6 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const repoFilters = document.querySelectorAll("[data-repo-filter]");
+  repoFilters.forEach((button) => {
+    button.addEventListener("click", () => {
+      const topic = button.dataset.repoFilter;
+      repoFilters.forEach((other) => other.setAttribute("aria-pressed", String(other === button)));
+      document.querySelectorAll(".repo-card[data-topic]").forEach((card) => {
+        card.hidden = topic !== "all" && card.dataset.topic !== topic;
+      });
+    });
+  });
+
   const searchInput = document.querySelector("[data-pub-search]");
   const sectionFilter = document.querySelector("[data-pub-section-filter]");
   const resultLabel = document.querySelector("[data-pub-results]");
